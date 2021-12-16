@@ -1,0 +1,88 @@
+body
+{
+	background-color: #666;
+	margin: 0;
+	font-family: rubik;
+	color: yellow;
+}
+
+.card
+{
+	list-style: none; /*To remove the number infront of them*/
+	padding: 40px;
+	background-color: black;
+	color: white;
+	/*display: grid;*/
+	text-align: center;
+}
+
+/*Card animation*/
+.card:hover
+{
+	animation: bounce 0.5s linear;
+}
+
+@keyframes bounce
+{
+	20%
+	{
+		transform: translateY(-6px);
+	}
+	40%
+	{
+		transform: translateY(0);
+	}
+	60%
+	{
+		transform: translateY(-2px);
+	}
+	80%
+	{
+		transform: translateY(0);
+	}
+}
+
+.card-title
+{
+	text-transform: uppercase;
+	font-size: 32px;
+	font-weight: normal;
+	margin-bottom: 0;
+}
+
+.card-subtitle
+{
+	text-transform: uppercase;
+	font-weight: lighter;
+	color: white;
+	margin-top: 5px;
+}
+
+.card-image
+{
+	height: 180px;
+	/*margin: 0 auto; you can use this to center the card image but 
+	you need to display the grind on the .card so long story short
+	I chose to use text-align: center; cause its 1 less lign xd*/
+}
+
+#pokedex
+{
+	padding-inline-start: 0; /*to get full screen in left side*/
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-gap: 20px;
+}
+
+.container
+{
+	padding: 20px;
+	margin: 0 auto;
+}
+
+h1
+{
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 54px;
+}
